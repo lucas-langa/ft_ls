@@ -22,6 +22,7 @@
 # include "libft/libft.h"
 # include <pwd.h>
 # include <grp.h>
+# include <stdio.h>
 
 typedef struct			s_dirname
 {

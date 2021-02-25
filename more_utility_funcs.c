@@ -45,7 +45,7 @@ int			erro_kill(struct passwd *pwd)
 {
 	if (!pwd)
 	{
-		ft_printf("I'm not allowed to access this file/folder\n");
+		printf("I'm not allowed to access this file/folder\n");
 		return (1);
 	}
 	else

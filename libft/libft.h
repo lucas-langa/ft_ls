@@ -18,38 +18,6 @@
 # include <wchar.h>
 # define ABS(x) ((x < 0) ? -(x) : (x))
 
-typedef	struct	s_flist
-{
-	char		*flags;
-	short		width;
-	short		prcsn;
-	char		hh;
-	char		h;
-	char		ll;
-	char		l;
-	char		j;
-	char		z;
-	char		specifier;
-	short		size;
-}				t_flist;
-
-int		ft_printf(char *format, ...);
-int		ift_putchar(char chr);
-int		ft_fnscall(char **input, va_list va);
-size_t	ft_atoif(char **str1);
-char	ft_strchrf(char *str0, int form00);
-int		ift_putstr(char *str, int prcsn);
-int		ft_putprcnt(t_flist *lst, char p);
-int		ft_chrhandle(t_flist *lst, void *c);
-int		ft_strhandle(t_flist *lst, void *s);
-int		ft_putwchar(wchar_t wc);
-int		ft_putwstr(wchar_t *ws, int prcsn);
-int		ft_dgthandle(t_flist *lst, void *n00);
-int		ft_unshandle(t_flist *lst, void *n01);
-int		ft_octhandle(t_flist *lst, void *n10);
-int		ft_hexhandle(t_flist *lst, void *n11);
-int		ft_ptrhandle(t_flist *lst, void *n);
-int		ft_output(t_flist *lst, va_list va);
 int  	ft_lindexof(char *str, char c);
 int		ft_indexof(char *str, char c);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);

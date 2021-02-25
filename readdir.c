@@ -45,10 +45,10 @@ t_dir_list		*check_file(char *xfile, t_dir_things *x)
 {
 	t_dir_list	*node;
 	t_dir_list	*head;
-	int			r;
+	// int			r;
 	char		*temp;
 
-	r = 0;
+	// r = 0;
 	node = NULL;
 	temp = NULL;
 	head = NULL;
